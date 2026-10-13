@@ -39,7 +39,6 @@
                 <li><a href="#cong-cu-ket-qua">Công cụ 3: Bảng kết quả có sắp xếp</a></li>
             </ul>
         </section>
-
         <section id="cong-cu-tra-cuu">
             <h2>Công cụ 1: Tra cứu đội thi</h2>
             <p>Nhập tên đội hoặc tên khoa, sau đó lọc theo môn thi và chọn cách sắp xếp.</p>
@@ -133,6 +132,7 @@
         <section id="cong-cu-ket-qua">
             <h2>Công cụ 3: Bảng kết quả có sắp xếp</h2>
             <p>Chọn cách sắp xếp hoặc lọc theo môn thi để xem bảng kết quả.</p>
+
             <form id="form-ket-qua">
                 <div class="nhom-truong">
                     <label for="sap-xep-ket-qua">Sắp xếp</label>
@@ -143,6 +143,7 @@
                         <option value="ten-az">Tên đội A - Z</option>
                     </select>
                 </div>
+
                 <div class="nhom-truong">
                     <label for="loc-mon-ket-qua">Lọc theo môn thi</label>
                     <select id="loc-mon-ket-qua" name="loc-mon-ket-qua">
@@ -157,9 +158,8 @@
                     <button type="button" id="nut-dat-lai-ket-qua">Đặt lại</button>
                 </div>
             </form>
-
             <table id="bang-ket-qua-cong-cu">
-                <caption>Bảng kết quả tạm thời </caption>
+                <caption>Bảng kết quả tạm thời (dữ liệu mẫu)</caption>
                 <thead>
                     <tr>
                         <th scope="col">Hạng</th>
@@ -221,6 +221,7 @@
                     </tr>
                 </tbody>
             </table>
+
             <p id="thong-bao-ket-qua" aria-live="polite"></p>
             <p class="ghi-chu"><em>Kết quả chỉ mang tính tham khảo và có thể thay đổi sau khi Ban tổ chức xác nhận.</em></p>
         </section>
@@ -235,6 +236,7 @@
         </section>
 
     </main>
+
     <footer id="chan-trang">
         <p>ICT0023 - Nhóm 12 - Website Sự kiện Sinh viên</p>
         <p>Dữ liệu mẫu, chỉ mang tính minh họa.</p>
