@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Công cụ tra cứu đội thi, tính thời lượng hoạt động và sắp xếp bảng kết quả của Ngày hội Sinh viên Trường Đại học Tây Bắc.">
+    <title>Công cụ - Ngày hội Sinh viên Trường Đại học Tây Bắc 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="trang-cong-cu">
+
+    <header id="dau-trang">
+        <p class="ten-website">Ngày hội Sinh viên Trường Đại học Tây Bắc</p>
+        <nav id="nav-chinh" aria-label="Menu chính">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="chuong-trinh.html">Chương trình</a></li>
+                <li><a href="doi-thi.html">Đội thi</a></li>
+                <li><a href="cong-cu.html" aria-current="page">Công cụ</a></li>
+                <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="noi-dung-chinh">
+
+        <section id="tieu-de-trang">
+            <h1>Công cụ tương tác</h1>
+            <p>
+                Trang có 3 công cụ giúp bạn tra cứu đội thi, kiểm tra thời lượng một hoạt động
+                và xem bảng kết quả có sắp xếp. Cách dùng chi tiết xem tại trang
+                <a href="hoi-dap.html">Hỏi đáp</a>.
+            </p>
+            <p class="ghi-chu"><em>Kết quả chỉ mang tính tham khảo. Dữ liệu chỉ tồn tại trong phiên đang mở và được đặt lại khi tải lại trang.</em></p>
+            <ul id="muc-luc-cong-cu">
+                <li><a href="#cong-cu-tra-cuu">Công cụ 1: Tra cứu đội thi</a></li>
+                <li><a href="#cong-cu-thoi-luong">Công cụ 2: Tính thời lượng hoạt động</a></li>
+                <li><a href="#cong-cu-ket-qua">Công cụ 3: Bảng kết quả có sắp xếp</a></li>
+            </ul>
+        </section>
+        <section id="cong-cu-tra-cuu">
+            <h2>Công cụ 1: Tra cứu đội thi</h2>
+            <p>Nhập tên đội hoặc tên khoa, sau đó lọc theo môn thi và chọn cách sắp xếp.</p>
+
+            <form id="form-tra-cuu">
+                <div class="nhom-truong">
+                    <label for="o-tim-kiem">Từ khóa (tên đội hoặc khoa)</label>
+                    <input type="search" id="o-tim-kiem" name="tu-khoa" placeholder="Ví dụ: Mã Nguồn, Kinh tế">
+                </div>
+
+                <div class="nhom-truong">
+                    <label for="loc-mon">Môn thi</label>
+                    <select id="loc-mon" name="mon-thi">
+                        <option value="tat-ca">Tất cả môn thi</option>
+                        <option value="van-nghe">Văn nghệ</option>
+                        <option value="the-thao">Hội thao</option>
+                        <option value="hoc-thuat">Đố vui học thuật</option>
+                    </select>
+                </div>
+
+                <div class="nhom-truong">
+                    <label for="loc-khoa">Khoa</label>
+                    <select id="loc-khoa" name="khoa">
+                        <option value="tat-ca">Tất cả các khoa</option>
+                        <option value="tieu-hoc-mam-non">Tiểu học - Mầm non</option>
+                        <option value="kinh-te">Kinh tế</option>
+                        <option value="khtn-cong-nghe">Khoa học tự nhiên - Công nghệ</option>
+                        <option value="khoa-hoc-xa-hoi">Khoa học xã hội</option>
+                        <option value="co-so">Cơ sở</option>
+                        <option value="nong-lam">Nông - Lâm</option>
+                        <option value="khoa-hoc-suc-khoe">Khoa học sức khỏe</option>
+                    </select>
+                </div>
+
+                <div class="nhom-truong">
+                    <label for="sap-xep">Sắp xếp theo</label>
+                    <select id="sap-xep" name="sap-xep">
+                        <option value="ten-az">Tên đội A - Z</option>
+                        <option value="ten-za">Tên đội Z - A</option>
+                        <option value="thanh-vien-giam">Số thành viên giảm dần</option>
+                        <option value="thanh-vien-tang">Số thành viên tăng dần</option>
+                    </select>
+                </div>
+
+                <div class="nhom-nut">
+                    <button type="submit" id="nut-tim">Tìm kiếm</button>
+                    <button type="button" id="nut-dat-lai-tra-cuu">Đặt lại</button>
+                </div>
+            </form>
+
+            <div id="ket-qua-tra-cuu" aria-live="polite">
+                <p>Kết quả tra cứu sẽ hiển thị ở đây.</p>
+            </div>
+        </section>
+
+        <section id="cong-cu-thoi-luong">
+            <h2>Công cụ 2: Tính thời lượng hoạt động</h2>
+            <p>
+                Nhập tên hoạt động cùng giờ bắt đầu và giờ kết thúc để biết thời lượng.
+                Nếu hai giờ không hợp lệ, công cụ sẽ báo lỗi.
+            </p>
+
+            <form id="form-hoat-dong" novalidate>
+                <div class="nhom-truong">
+                    <label for="ten-hoat-dong">Tên hoạt động</label>
+                    <input type="text" id="ten-hoat-dong" name="ten-hoat-dong" placeholder="Ví dụ: Hội thi Văn nghệ - vòng 1">
+                </div>
+
+                <div class="nhom-truong">
+                    <label for="gio-bat-dau">Giờ bắt đầu</label>
+                    <input type="time" id="gio-bat-dau" name="gio-bat-dau">
+                </div>
+
+                <div class="nhom-truong">
+                    <label for="gio-ket-thuc">Giờ kết thúc</label>
+                    <input type="time" id="gio-ket-thuc" name="gio-ket-thuc">
+                </div>
+
+                <div class="nhom-nut">
+                    <button type="submit" id="nut-tinh">Tính thời lượng</button>
+                    <button type="button" id="nut-dung-thu">Dùng thử</button>
+                    <button type="button" id="nut-dat-lai">Đặt lại</button>
+                </div>
+            </form>
+
+            <div id="thong-bao-loi" role="alert" aria-live="assertive"></div>
+            <p id="thoi-luong">Thời lượng: chưa tính.</p>
+            <p class="ghi-chu"><em>Gợi ý: nút "Dùng thử" sẽ điền sẵn một hoạt động mẫu trong chương trình.</em></p>
+        </section>
+
+        <section id="cong-cu-ket-qua">
+            <h2>Công cụ 3: Bảng kết quả có sắp xếp</h2>
+            <p>Chọn cách sắp xếp hoặc lọc theo môn thi để xem bảng kết quả.</p>
+
+            <form id="form-ket-qua">
+                <div class="nhom-truong">
+                    <label for="sap-xep-ket-qua">Sắp xếp</label>
+                    <select id="sap-xep-ket-qua" name="sap-xep-ket-qua">
+                        <option value="hang-tang">Hạng tăng dần</option>
+                        <option value="diem-giam">Điểm cao đến thấp</option>
+                        <option value="diem-tang">Điểm thấp đến cao</option>
+                        <option value="ten-az">Tên đội A - Z</option>
+                    </select>
+                </div>
+
+                <div class="nhom-truong">
+                    <label for="loc-mon-ket-qua">Lọc theo môn thi</label>
+                    <select id="loc-mon-ket-qua" name="loc-mon-ket-qua">
+                        <option value="tat-ca">Tất cả môn thi</option>
+                        <option value="van-nghe">Văn nghệ</option>
+                        <option value="the-thao">Hội thao</option>
+                        <option value="hoc-thuat">Đố vui học thuật</option>
+                    </select>
+                </div>
+
+                <div class="nhom-nut">
+                    <button type="button" id="nut-dat-lai-ket-qua">Đặt lại</button>
+                </div>
+            </form>
+            <table id="bang-ket-qua-cong-cu">
+                <caption>Bảng kết quả tạm thời (dữ liệu mẫu)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Hạng</th>
+                        <th scope="col">Tên đội</th>
+                        <th scope="col">Khoa</th>
+                        <th scope="col">Môn thi</th>
+                        <th scope="col">Điểm</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-ket-qua">
+                    <tr>
+                        <td>1</td>
+                        <td>Đội Mã Nguồn</td>
+                        <td>Khoa học tự nhiên - Công nghệ</td>
+                        <td>Đố vui học thuật</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Đội Cánh Buồm</td>
+                        <td>Kinh tế</td>
+                        <td>Hội thao</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Đội Mầm Xanh</td>
+                        <td>Tiểu học - Mầm non</td>
+                        <td>Văn nghệ</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Đội Núi Rừng</td>
+                        <td>Nông - Lâm</td>
+                        <td>Hội thao</td>
+                        <td>86</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Đội Nhịp Tim</td>
+                        <td>Khoa học sức khỏe</td>
+                        <td>Đố vui học thuật</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Đội Sắc Màu</td>
+                        <td>Khoa học xã hội</td>
+                        <td>Văn nghệ</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Đội Khởi Đầu</td>
+                        <td>Cơ sở</td>
+                        <td>Hội thao</td>
+                        <td>78</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p id="thong-bao-ket-qua" aria-live="polite"></p>
+            <p class="ghi-chu"><em>Kết quả chỉ mang tính tham khảo và có thể thay đổi sau khi Ban tổ chức xác nhận.</em></p>
+        </section>
+
+        <section id="dieu-huong-tiep">
+            <h2>Xem tiếp</h2>
+            <ul>
+                <li><a href="doi-thi.html">Danh sách đội thi</a></li>
+                <li><a href="chuong-trinh.html">Chương trình theo khung giờ</a></li>
+                <li><a href="hoi-dap.html">Hướng dẫn sử dụng công cụ</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="chan-trang">
+        <p>ICT0023 - Nhóm 12 - Website Sự kiện Sinh viên</p>
+        <p>Dữ liệu mẫu, chỉ mang tính minh họa.</p>
+        <p>&copy; 2026 Nhóm 12 - Trường Đại học Tây Bắc</p>
+    </footer>
+</body>
+</html>
