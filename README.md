@@ -1,7 +1,7 @@
 # ICT0023-K66-Nhom12-SuKienSinhVien
 Website sự kiện sinh viên cho Ban tổ chức ngày hội / hội thao / hội thi. Chạy hoàn toàn trên trình duyệt, không backend, không lưu trữ dữ liệu.
 - **Website (GitHub Pages):** https://<tai-khoan>.github.io/ICT0023-K66-Nhom12-SuKienSinhVien/
-- **Video demo (YouTube Unlisted):** <dán link>
+- **Video demo (YouTube Unlisted):** https://youtu.be/IC8YiaN75f8https://youtu.be/IC8YiaN75f8
 - **Phiên bản nộp:** tag `v1.0-final`
 # 1. Giới thiệu
 - **Tên sự kiện trong website:** <điền, ví dụ: Ngày hội ... 2026>
