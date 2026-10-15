@@ -543,3 +543,145 @@ main h3{
         padding: 12px 6px;
     }
 }
+#nav-chinh {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+#nav-chinh .nav-link {
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+#nav-chinh .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+#nav-chinh .nav-link.active {
+    background-color: var(--xanh);
+    color: #fff;
+}
+.hero {
+    animation: hien-banner 0.8s ease both;
+}
+
+.hero h1 {
+    animation: hien-tu-tren 0.7s ease both;
+}
+
+.hero .khau-hieu {
+    animation: hien-dan 1s ease both;
+}
+
+.hero .btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.card,
+.the-thong-tin,
+.the-thong-ke,
+.the-muc-tieu {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover,
+.the-thong-tin:hover,
+.the-thong-ke:hover,
+.the-muc-tieu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(11, 58, 120, 0.14);
+}
+
+.the-noi-dung .card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.the-noi-dung:hover .card-img-top {
+    transform: scale(1.04);
+}
+.the-noi-dung {
+    overflow: hidden;
+}
+
+.the-noi-dung .card-body {
+    background: #fff;
+    position: relative;
+}
+.btn {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(11, 58, 120, 0.15);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+main > section > h2 {
+    animation: hien-dan 0.6s ease both;
+}
+#chan-trang a {
+    transition: color 0.2s ease;
+}
+#chan-trang a:hover {
+    color: var(--cam);
+}
+@keyframes hien-banner {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes hien-tu-tren {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes hien-dan {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
