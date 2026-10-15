@@ -3,8 +3,25 @@
   if (hienThi === null) {
     return;
   }
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+window.onscroll = function() {
+  scrollFunction();
+};
 
-  const moc = new Date(hienThi.dataset.thoiDiem);   // đọc từ thuộc tính data-thoi-diem
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+scrollToTopBtn.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+  const moc = new Date(hienThi.dataset.thoiDiem);
   if (Number.isNaN(moc.getTime())) {
     hienThi.textContent = "Chưa có thời điểm khai mạc hợp lệ.";
     return;
@@ -26,5 +43,5 @@
   }
 
   capNhat();
-  boDem = setInterval(capNhat, 1000);   // cập nhật mỗi giây
+  boDem = setInterval(capNhat, 1000); 
 })();
