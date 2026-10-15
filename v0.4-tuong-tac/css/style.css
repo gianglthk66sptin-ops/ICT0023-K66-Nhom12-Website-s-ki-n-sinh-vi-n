@@ -94,7 +94,7 @@ main h3{
 }
 
 .hero{
-  background:linear-gradient(rgba(11,58,120,.8),rgba(11,58,120,.8)),url(../images/banner-ngay-hoi.jpg) center/cover no-repeat,var(--navy);
+  background:linear-gradient(rgba(11,58,120,.8),rgba(11,58,120,.8)),url(../images/banner-ngay-hoi.jpg) center/cover no-repeat var(--navy);
   color:#fff;
   text-align:center;
   padding:2.5rem 0;
