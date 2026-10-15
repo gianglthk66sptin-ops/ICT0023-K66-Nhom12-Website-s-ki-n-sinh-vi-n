@@ -71,7 +71,7 @@ README.md  SOURCES.md  CONTRIBUTIONS.md
 
 | Tag | Nội dung |
 |---|---|
-| `v0.1-y-tuong` | Trang ý tưởng (`docs/v0.1-y-tuong.html`) |
+| `v0.1-y-tuong` | Trang ý tưởng (`html/v0.1-y-tuong.html`) |
 | `v0.2-html` | 6 trang HTML ngữ nghĩa, nội dung và `id` để gắn JavaScript |
 | `v0.3-giao-dien` | Bootstrap, `style.css`, giao diện responsive |
 | `v0.4-tuong-tac` | JavaScript và jQuery, ba chức năng bắt buộc |
