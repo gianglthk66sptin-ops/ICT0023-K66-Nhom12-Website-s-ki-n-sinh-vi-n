@@ -1,6 +1,6 @@
 # Nguồn tham khảo và khai báo
 
-> Tệp này được điền theo **lịch sử trao đổi thực tế của nhóm với công cụ AI** (Claude) và theo các tệp mà nhóm đã cung cấp. Ngày ghi theo giờ hệ thống lúc tạo tệp, quy đổi sang giờ Việt Nam (UTC+7); nhóm nên đối chiếu với thời gian hiển thị trong lịch sử trò chuyện trên claude.ai. Các ô còn `[điền]` là thông tin **chỉ nhóm biết** (nguồn gốc ảnh, ngày nhóm tự đọc tài liệu...); AI không có dữ kiện nên không điền thay.
+> Tệp này được điền theo **lịch sử trao đổi thực tế của nhóm với công cụ AI** (Claude) và theo các tệp mà nhóm đã cung cấp. Ngày ghi theo giờ hệ thống lúc tạo tệp, quy đổi sang giờ Việt Nam (UTC+7); nhóm nên đối chiếu với thời gian hiển thị trong lịch sử trò chuyện trên claude.ai.
 
 ## 1. Tài liệu
 
