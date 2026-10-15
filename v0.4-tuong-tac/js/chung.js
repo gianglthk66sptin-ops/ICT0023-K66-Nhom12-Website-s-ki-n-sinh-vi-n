@@ -4,7 +4,7 @@
     return;
   }
 
-  const moc = new Date(hienThi.dataset.thoiDiem);   // đọc từ thuộc tính data-thoi-diem
+  const moc = new Date(hienThi.dataset.thoiDiem);
   if (Number.isNaN(moc.getTime())) {
     hienThi.textContent = "Chưa có thời điểm khai mạc hợp lệ.";
     return;
@@ -26,5 +26,5 @@
   }
 
   capNhat();
-  boDem = setInterval(capNhat, 1000);   // cập nhật mỗi giây
+  boDem = setInterval(capNhat, 1000);
 })();
