@@ -107,4 +107,5 @@ Không có thông tin cá nhân thật của sinh viên được công bố trê
 | Xử lý ảnh | Logo 600×600; ảnh sự kiện đã nén | Nhóm tự thêm ảnh sự kiện và hai logo khoa | Xem bằng mắt, so với ảnh gốc |
 | Hồ sơ v1.0 | Bản nháp README, SOURCES, CONTRIBUTIONS, kiểm thử | Nhóm ghi đúng đóng góp từng người | Nhóm đọc lại và xác nhận |
 
-Nhóm xác nhận: mỗi thành viên đã đọc, chạy thử và giải thích được phần mã mình phụ trách: Giang - Lò Thị Hà Giang 
+Nhóm xác nhận: mỗi thành viên đã đọc, chạy thử và giải thích được phần mã mình phụ trách:
+Giang - Lò Thị Hà Giang 
