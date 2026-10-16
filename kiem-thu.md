@@ -1,22 +1,22 @@
 # Kiểm thử
 
-Bản v1.0 đã được chạy **74 phép kiểm thử tự động** bằng Chromium (Playwright) và đạt cả 74. Cột "Tay" để nhóm tự kiểm thử lại trên trình duyệt thật, đánh dấu `[x]` khi đã đạt và ghi người thực hiện, ngày.
+Bản v1.0 đã được chạy **74 phép kiểm thử tự động** bằng Chromium (Playwright) và đạt cả 74. 
 
 ## 1. Chức năng
 
 | # | Trang / công cụ | Thao tác | Kết quả mong đợi | Tự động | Tay |
 |---|---|---|---|---|---|
-| 1 | Trang chủ | Mở trang | Đếm ngược hiển thị "Còn ... ngày ... giờ ..." và đổi mỗi giây | Đạt | [ ] |
-| 2 | Trang chủ | Đổi `data-thoi-diem` sang quá khứ hoặc giá trị sai (thử trong DevTools) | Quá khứ: "Lễ khai mạc đã diễn ra."; sai hoặc rỗng: "Chưa có thời điểm khai mạc hợp lệ." | Đạt | [ ] |
-| 3 | Chương trình | Mở trang | Bảng 8 dòng, cột Thời lượng đúng (dòng 3: 1 giờ 30 phút) | Đạt | [ ] |
-| 4 | Đội thi | Mở trang | 7 card, 7 dòng kết quả, thống kê 7 / 95 / 86,4 | Đạt | [ ] |
-| 5 | Tra cứu | Để trống | Hiện đủ 7 đội | Đạt | [ ] |
-| 6 | Tra cứu | Gõ `ma nguon` | Ra "Đội Mã Nguồn" (không cần dấu) | Đạt | [ ] |
-| 7 | Tra cứu | Gõ `xyz` | Thông báo không tìm thấy | Đạt | [ ] |
-| 8 | Tra cứu | Chỉ nhập khoảng trắng | Hiện đủ 7 đội, kèm nhắc nhẹ | Đạt | [ ] |
-| 9 | Tra cứu | Từ khóa dài hơn 50 ký tự | Cảnh báo từ khóa quá dài | Đạt | [ ] |
-| 10 | Tra cứu | Môn "Hội thao" + khoa "Kinh tế" | Chỉ còn "Đội Cánh Buồm" | Đạt | [ ] |
-| 11 | Tra cứu | Nhấn Enter trong ô tìm | Trang không tải lại | Đạt | [ ] |
+| 1 | Trang chủ | Mở trang | Đếm ngược hiển thị "Còn ... ngày ... giờ ..." và đổi mỗi giây | Đạt | x |
+| 2 | Trang chủ | Đổi `data-thoi-diem` sang quá khứ hoặc giá trị sai (thử trong DevTools) | Quá khứ: "Lễ khai mạc đã diễn ra."; sai hoặc rỗng: "Chưa có thời điểm khai mạc hợp lệ." | Đạt | x |
+| 3 | Chương trình | Mở trang | Bảng 8 dòng, cột Thời lượng đúng (dòng 3: 1 giờ 30 phút) | Đạt | x |
+| 4 | Đội thi | Mở trang | 7 card, 7 dòng kết quả, thống kê 7 / 95 / 86,4 | Đạt | x |
+| 5 | Tra cứu | Để trống | Hiện đủ 7 đội | Đạt | x |
+| 6 | Tra cứu | Gõ `ma nguon` | Ra "Đội Mã Nguồn" (không cần dấu) | Đạt | x |
+| 7 | Tra cứu | Gõ `xyz` | Thông báo không tìm thấy | Đạt | x |
+| 8 | Tra cứu | Chỉ nhập khoảng trắng | Hiện đủ 7 đội, kèm nhắc nhẹ | Đạt | x |
+| 9 | Tra cứu | Từ khóa dài hơn 50 ký tự | Cảnh báo từ khóa quá dài | Đạt | x |
+| 10 | Tra cứu | Môn "Hội thao" + khoa "Kinh tế" | Chỉ còn "Đội Cánh Buồm" | Đạt | x |
+| 11 | Tra cứu | Nhấn Enter trong ô tìm | Trang không tải lại | Đạt | x |
 | 12 | Tra cứu | Dùng thử, Đặt lại | Dùng thử ra 1 đội; Đặt lại về 7 đội, ô nhập trống | Đạt | [ ] |
 | 13 | Lập chương trình | Bấm Thêm khi để trống | 3 lỗi: tên, giờ bắt đầu, giờ kết thúc | Đạt | [ ] |
 | 14 | Lập chương trình | Giờ kết thúc trước giờ bắt đầu | Lỗi "Giờ kết thúc phải sau giờ bắt đầu" | Đạt | [ ] |
