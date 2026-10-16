@@ -16,7 +16,7 @@ Người dùng chính: sinh viên tham gia, Ban tổ chức, tình nguyện viê
 
 | Họ và tên | Tài khoản GitHub | Vai trò | Nhiệm vụ chính |
 |---|---|---|---|
-| Lò Thị Hà Giang | gianglhtk66sptin-ops | Nhóm trưởng, quản lý GitHub | Khung chung, giao diện, quản lý nhánh, Pull Request và tag |
+| Lò Thị Hà Giang | gianglthk66sptin-ops | Nhóm trưởng, quản lý GitHub | Khung chung, giao diện, quản lý nhánh, Pull Request và tag |
 | Phạm Hồng Trang | trangphk66sptin-ctrl | Thành viên | Trang chương trình, công cụ lập chương trình |
 | Sùng A Đua | duasak66sptin-cmd | Thành viên | JavaScript: tra cứu đội thi, bảng kết quả |
 | Nguyễn Đức Đạt | datjuan-ng | Thành viên | Kiểm thử, tài liệu, trang liên hệ và hỏi đáp |
