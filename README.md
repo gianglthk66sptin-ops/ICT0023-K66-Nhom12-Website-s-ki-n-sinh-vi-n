@@ -63,7 +63,7 @@ css/style.css
 js/            data.js, tien-ich.js, chung.js, doi-thi.js, chuong-trinh.js,
                cong-cu-tra-cuu.js, cong-cu-chuong-trinh.js, cong-cu-ket-qua.js, lien-he.js
 images/        logo, logo 7 khoa, ảnh sự kiện, favicon
-docs/          v0.1-y-tuong.html, wireframe/, anh-chup/, kiem-thu.md, vi-tri-su-dung-javascript.md
+html/          v0.1-y-tuong.html, wireframe/, anh-chup/, kiem-thu.md, vi-tri-su-dung-javascript.md
 README.md  SOURCES.md  CONTRIBUTIONS.md
 ```
 
