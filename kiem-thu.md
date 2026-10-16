@@ -51,11 +51,11 @@ Bản v1.0 đã được chạy **74 phép kiểm thử tự động** bằng Ch
 | Không dùng localStorage, sessionStorage, cookie | Tab Application của DevTools | Đạt | x |
 | Liên kết "Bỏ qua điều hướng" là phần tử Tab đầu tiên, Enter chuyển tới nội dung | Bàn phím | Đạt | x |
 | Mọi `id` không trùng, liên kết giữa các trang đúng | Kiểm tra mã | Đạt | x |
-| Không thanh cuộn ngang ở 360, 768, 1200 px | DevTools, chế độ thiết bị | Chưa kiểm tra tự động | x |
-| Menu thu gọn (☰) hoạt động trên điện thoại | Điện thoại thật | Chưa kiểm tra tự động | x |
-| Accordion mở và đóng được | Trình duyệt thật (cần Bootstrap) | Chưa kiểm tra tự động | x |
+| Không thanh cuộn ngang ở 360, 768, 1200 px | DevTools, chế độ thiết bị | Chưa kiểm tra tự động |  |
+| Menu thu gọn (☰) hoạt động trên điện thoại | Điện thoại thật | Chưa kiểm tra tự động |  |
+| Accordion mở và đóng được | Trình duyệt thật (cần Bootstrap) | Chưa kiểm tra tự động |  |
 | Dùng được trên Chrome, Edge hoặc Firefox | Mở bằng từng trình duyệt | Chromium đạt | x |
-| GitHub Pages mở được ở cửa sổ ẩn danh, đủ 6 trang, không 404 | Sau khi bật Pages | Chưa kiểm tra | x |
+| GitHub Pages mở được ở cửa sổ ẩn danh, đủ 6 trang, không 404 | Sau khi bật Pages | Chưa kiểm tra |  |
 | Độ tương phản chữ từ 4,5:1 | Đã đo các cặp màu chính (4,8:1 đến 14:1) | Đạt | x |
 
 ## 3. Ghi chú kiểm thử
