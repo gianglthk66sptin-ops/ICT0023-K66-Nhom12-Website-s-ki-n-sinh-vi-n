@@ -90,7 +90,7 @@ Không có thông tin cá nhân thật của sinh viên được công bố trê
 | 10/10 | "bắt đầu viết style.css ... và các trang" | `style.css` và 6 trang gắn Bootstrap | |
 | 11/10 | Gửi CSS mẫu: "sửa lại file CSS theo kiểu trình bày này ... giữ nguyên nội dung" | `style.css` trình bày lại, nội dung không đổi | Nhóm chọn kiểu trình bày |
 | 11/10 | Gửi `index.html` mẫu: "sửa lại các trang html theo cách trình bày tuần tự" | 6 trang HTML thụt lề tuần tự | Nhóm chọn kiểu trình bày |
-| 11/10 | "lên ý tưởng cho v0.4", rồi "bắt đầu làm v0.4-tuong-tac vì nhóm mình không có ai làm cả" | 9 tệp JavaScript và jQuery, HTML cập nhật | |
+| 11/10 | "lên ý tưởng cho v0.4", rồi "bắt đầu làm v0.4-tuong-tac" | 9 tệp JavaScript và jQuery, HTML cập nhật | |
 | 12/10 | "viết lại v0.4-tuong-tac ... theo đúng yêu cầu của bài tập" | Viết lại Công cụ 2 thành "lập và kiểm tra chương trình" cho đúng chủ đề nhóm 12; bảng vị trí sử dụng JavaScript; kiểm thử bằng Chromium (59 phép) | |
 | 12/10 | "viết riêng phần javascript", "tạo thành tệp riêng" | Mã JavaScript từng tệp và `js.zip` | |
 | 12/10 | Gửi tệp RAR: "xem giúp mình bài của nhóm đã đúng với yêu cầu của nhóm 12 chưa ... lên ý tưởng cho v1.0-final" | Đánh giá, danh sách việc cần sửa, ý tưởng v1.0 | Nhóm tự thêm ảnh sự kiện và hai logo còn thiếu vào bản RAR |
