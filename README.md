@@ -49,7 +49,7 @@ Mỗi công cụ có nút **Dùng thử** và **Đặt lại** và xử lý từ
 
 ## 5. Công nghệ
 
-HTML5, CSS3 (`css/style.css`), Bootstrap 5.3.3 (grid, navbar, card, accordion, alert, form, table, badge), Bootstrap Icons 1.11.3, jQuery 3.7.1, JavaScript thuần. Font Be Vietnam Pro (Google Fonts). Chi tiết nguồn xem `SOURCES.md`.
+HTML5, CSS3 (`css/style.css`), Bootstrap 5.3.3 (grid, navbar, card, accordion, alert, form, table, badge), Bootstrap Icons 1.11.3, jQuery 3.6.1, JavaScript thuần. Font Be Vietnam Pro (Google Fonts). Chi tiết nguồn xem `SOURCES.md`.
 
 ## 6. Thiết kế
 
