@@ -15,7 +15,7 @@
 | | | | v1.0 | Nút In chương trình, CSS in ấn, wireframe | `cong-cu-chuong-trinh.js`, `css/style.css`, `docs/wireframe/` |  |
 | Sùng A Đua | duasak66sptin-cmd | Thành viên | v0.2 | Khung công cụ và form | `cong-cu.html` |[https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n/tree/main/v0.2-html](https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n/tree/main/v0.2-html)  |
 | | | | v0.4 | Tra cứu đội thi, bảng kết quả (jQuery) | `cong-cu-tra-cuu.js`, `cong-cu-ket-qua.js` | [https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n/tree/main/v0.4-tuong-tac](https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n/tree/main/v0.4-tuong-tac) |
-| Nguyễn Đức Đạt | datjuan-ng | Thành viên | v0.2 | Trang đội thi, hỏi đáp, kiểm tra liên kết | `doi-thi.html`, `hoi-dap.html` |  |
+| Nguyễn Đức Đạt | datjuan-ng | Thành viên | v0.2 | Trang đội thi, hỏi đáp, kiểm tra liên kết | `doi-thi.html`, `hoi-dap.html` | https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n/blob/main/v0.2-html/doi-thi.html;  |
 | | | | v0.4 | Form liên hệ có kiểm tra dữ liệu (jQuery) | `lien-he.js`, `lien-he.html` |  |
 | | | | v1.0 | Kiểm thử, ảnh chụp responsive, `SOURCES.md` | `docs/`, `SOURCES.md` |  |
 
