@@ -3,9 +3,10 @@
 
 Bài tập lớn học phần **ICT0023** - Nhóm 12 - Chủ đề: **Website sự kiện sinh viên**.
 
-- Repository: `ICT0023-K66-Nhom12-WebsiteSuKienSinhVien`
-- Website (GitHub Pages): `https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n` 
-
+- Repository: `https://github.com/gianglthk66sptin-ops/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n`
+- Website (GitHub Pages): `https://gianglthk66sptin-ops.github.io/ICT0023-K66-Nhom12-Website-s-ki-n-sinh-vi-n/` 
+- Link YouTube:`https://youtu.be/r0ploOkBPIA?si=PnCljfhc-gOtLGTY`
+  
 ## 1. Mục tiêu và người dùng
 
 Website giúp Ban tổ chức và sinh viên theo dõi Ngày hội: xem thể lệ và chương trình theo khung giờ, tra cứu đội thi, xem bảng kết quả, tự lập và kiểm tra một chương trình theo mốc thời gian, và gửi phản hồi.
