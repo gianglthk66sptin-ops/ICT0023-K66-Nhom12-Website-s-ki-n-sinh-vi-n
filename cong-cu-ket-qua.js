@@ -1,5 +1,4 @@
-/* cong-cu-ket-qua.js - Công cụ 3: bảng kết quả có sắp xếp và lọc (dùng jQuery). */
-/* Yêu cầu đề: chức năng bắt buộc số 2 (lọc, sắp xếp) và dùng jQuery. */
+
 $(function () {
   const $sapXep = $("#sap-xep-ket-qua");
   const $locMon = $("#loc-mon-ket-qua");
@@ -9,7 +8,7 @@ $(function () {
   const TONG_DOI = DOI_THI.length;
 
   function dongThongBao(noiDung) {
-    return '<tr><td colspan="5" class="text-center">' + noiDung + "</td></tr>";   // chuỗi cố định, không chứa dữ liệu nhập
+    return '<tr><td colspan="5" class="text-center">' + noiDung + "</td></tr>";
   }
 
   function veBang() {
@@ -19,13 +18,12 @@ $(function () {
 
     let ds = xepHangDoi();
 
-    // Lọc theo môn thi
+  
     const mon = $locMon.val();
     if (mon !== "tat-ca") {
       ds = ds.filter(function (doi) { return doi.maMon === mon; });
     }
 
-    // Lọc theo điểm tối thiểu, kiểm tra dữ liệu nhập
     const chuoiDiem = $.trim($diem.val());
     if (chuoiDiem !== "") {
       const diemMin = Number(chuoiDiem);
@@ -38,7 +36,7 @@ $(function () {
       ds = ds.filter(function (doi) { return doi.diem >= diemMin; });
     }
 
-    // Sắp xếp
+
     switch ($sapXep.val()) {
       case "diem-giam":
         ds.sort(function (a, b) { return b.diem - a.diem; });
@@ -53,7 +51,7 @@ $(function () {
         ds.sort(function (a, b) { return a.hang - b.hang; });
     }
 
-    // Trường hợp biên: không có dòng nào
+    
     if (ds.length === 0) {
       $thongBao.addClass("alert alert-warning").text("Không có đội nào phù hợp với bộ lọc.");
       $tbody.append(dongThongBao("Không có dữ liệu."));
@@ -68,7 +66,7 @@ $(function () {
 
   $sapXep.add($locMon).on("change", veBang);
   $diem.on("input", veBang);
-  $("#form-ket-qua").on("submit", function (e) { e.preventDefault(); });   // Enter không tải lại trang
+  $("#form-ket-qua").on("submit", function (e) { e.preventDefault(); });   
 
   $("#nut-dat-lai-ket-qua").on("click", function () {
     $("#form-ket-qua")[0].reset();
@@ -81,5 +79,5 @@ $(function () {
     veBang();
   });
 
-  veBang();   // hiển thị bảng đầy đủ ngay khi mở trang
+  veBang();   
 });
