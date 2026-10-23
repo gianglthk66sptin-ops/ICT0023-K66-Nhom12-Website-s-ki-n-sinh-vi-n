@@ -1,7 +1,4 @@
-/* cong-cu-chuong-trinh.js - Công cụ 2: lập và kiểm tra chương trình theo mốc thời gian.
-   Yêu cầu đề: chức năng bắt buộc số 3 (kiểm tra form, báo lỗi rõ ràng, kết quả tính tức thời)
-   và chủ đề "Lập và kiểm tra chương trình theo mốc thời gian".
-   Chức năng mở rộng tự chọn: nút In chương trình (window.print + CSS @media print). */
+
 (function () {
   const form = document.getElementById("form-hoat-dong");
   const oTen = document.getElementById("ten-hoat-dong");
@@ -14,16 +11,11 @@
   const DONG_CUA = gioRaPhut("17:00");
   const TOI_DA_MUC = 12;
   const CHUA_CO = "Tổng quan: chưa có hoạt động nào.";
-
-  // Mảng đối tượng lưu chương trình do người dùng lập: { ten, batDau, ketThuc }
   let danhSach = [];
-
-  // Hai hoạt động giao nhau khi cái này bắt đầu trước lúc cái kia kết thúc, và ngược lại
   function giaoNhau(a, b) {
     return gioRaPhut(a.batDau) < gioRaPhut(b.ketThuc) && gioRaPhut(b.batDau) < gioRaPhut(a.ketThuc);
   }
 
-  // Vẽ lại bảng và tính tổng quan từ mảng danhSach
   function veLai() {
     tbody.replaceChildren();
 
@@ -37,10 +29,8 @@
       return;
     }
 
-    // Sắp xếp theo giờ bắt đầu
     danhSach.sort(function (a, b) { return gioRaPhut(a.batDau) - gioRaPhut(b.batDau); });
 
-    // Tìm các hoạt động trùng giờ: trung[i] là danh sách tên các hoạt động trùng với hoạt động thứ i
     const trung = danhSach.map(function () { return []; });
     let soCapTrung = 0;
     for (let i = 0; i < danhSach.length; i++) {
@@ -53,7 +43,6 @@
       }
     }
 
-    // Vẽ từng dòng của bảng
     danhSach.forEach(function (muc, i) {
       const tr = taoPhanTu("tr");
       const phut = gioRaPhut(muc.ketThuc) - gioRaPhut(muc.batDau);
@@ -79,9 +68,6 @@
 
       tbody.appendChild(tr);
     });
-
-    // Tính thời gian hoạt động thực tế (không cộng phần trùng) và các khoảng trống
-    // Danh sách đã sắp theo giờ bắt đầu nên chỉ cần nhớ mốc kết thúc xa nhất đã gặp (cuoi)
     let cuoi = gioRaPhut(danhSach[0].batDau);
     let hoatDong = 0;
     let khoangTrong = 0;
@@ -106,8 +92,6 @@
       "Khoảng trống giữa các hoạt động: " + (khoangTrong === 0 ? "không có" : dinhDangThoiLuong(khoangTrong) + ", dài nhất " + trongLonNhat + " phút") + ". " +
       "Số cặp trùng giờ: " + soCapTrung + ".";
   }
-
-  // Đổi số phút thành "HH:MM"
   function doiRaGio(tongPhut) {
     const g = String(Math.floor(tongPhut / 60)).padStart(2, "0");
     const p = String(tongPhut % 60).padStart(2, "0");
@@ -119,8 +103,6 @@
     const ten = oTen.value.trim();
     const bd = gioRaPhut(oBatDau.value);
     const kt = gioRaPhut(oKetThuc.value);
-
-    // Kiểm tra dữ liệu, gom tất cả lỗi vào một mảng
     const loi = [];
     if (ten === "") {
       loi.push("Vui lòng nhập tên hoạt động.");
@@ -165,8 +147,6 @@
     e.preventDefault();
     themHoatDong();
   });
-
-  // Xóa một hoạt động: bắt sự kiện click trên cả bảng (ủy quyền sự kiện) vì các nút Xóa được tạo động
   tbody.addEventListener("click", function (e) {
     const nut = e.target.closest("button[data-chi-so]");
     if (nut === null) {
@@ -188,13 +168,12 @@
     hienThongBao(thongBao, "info", "Đã nạp 4 hoạt động để dùng thử. Hai hoạt động đầu trùng giờ, hãy xem cột Trạng thái.");
   });
 
-  // Chức năng mở rộng tự chọn: in (hoặc lưu thành PDF) chương trình đã lập
   document.getElementById("nut-in-chuong-trinh").addEventListener("click", function () {
     if (danhSach.length === 0) {
       hienThongBao(thongBao, "warning", "Chưa có hoạt động nào để in. Hãy thêm hoạt động hoặc bấm \"Dùng thử\".");
       return;
     }
-    window.print();   // CSS @media print trong style.css chỉ giữ lại bảng chương trình
+    window.print();
   });
 
   document.getElementById("nut-dat-lai").addEventListener("click", function () {
